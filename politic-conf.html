@@ -20,9 +20,20 @@
         <a href="index.html#contacts">Контакты</a>
     </nav>
 
-    <button class="header__menu" type="button" aria-label="Открыть меню">
-        <img src="img/menu.svg" alt="">
+    <button
+        class="header__menu"
+        type="button"
+        aria-label="Открыть меню"
+        aria-expanded="false"
+        aria-controls="mobile-menu">
+        <img src="img/menu.svg" alt="menu">
     </button>
+
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Мобильная навигация">
+        <a href="index.html#about">О компании</a>
+        <a href="index.html#calculator">Калькулятор</a>
+        <a href="index.html#contacts">Контакты</a>
+    </nav>
 </header>
 
 <main class="privacy">
@@ -150,5 +161,6 @@
         <p> © 2026 в точку б. Все права защищены. <a href="politic-conf.html">Политика конфиденциальности.</a> </p>
     </div>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>

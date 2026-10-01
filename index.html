@@ -10,18 +10,30 @@
 
 <body>
 <header class="header">
-    <a class="header__logo" href="#" aria-label="В точку Б — на главную"> 
+    <a class="header__logo" href="index.html" aria-label="В точку Б — на главную">
         <img src="img/лог.png" alt="В точку Б">
     </a>
+
     <nav class="header__nav" aria-label="Основная навигация">
         <a href="#about">О компании</a>
         <a href="#calculator">Калькулятор</a>
         <a href="#contacts">Контакты</a>
     </nav>
 
-    <button class="header__menu" type="button" aria-label="Открыть меню">
-        <img src="img/Menu.svg" alt="menu-svg">
+    <button
+        class="header__menu"
+        type="button"
+        aria-label="Открыть меню"
+        aria-expanded="false"
+        aria-controls="mobile-menu">
+        <img src="img/menu.svg" alt="menu">
     </button>
+
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Мобильная навигация">
+        <a href="#about">О компании</a>
+        <a href="#calculator">Калькулятор</a>
+        <a href="#contacts">Контакты</a>
+    </nav>
 </header>
 
 <main>
@@ -33,7 +45,6 @@
         <h1 id="hero-title"></h1>
     </section>
 
-    <!-- О компании -->
    <section class="about" id="about" aria-labelledby="about-title">
     <div class="about__intro">
         <div class="about__title" id="about-title">
@@ -62,7 +73,6 @@
     </div>
 </section>
 
-    <!-- Наши возможности -->
     <section class="services" id="services" aria-labelledby="services-title">
         <h2 class="section-title" id="services-title">НАШИ ВОЗМОЖНОСТИ</h2>
         <div class="services__list">
@@ -92,7 +102,6 @@
         </div>
     </section>
 
-    <!-- Почему выбирают нас -->
     <section class="advantages" id="advantages" aria-labelledby="advantages-title">
         <div class="advantages__heading">
             <h2 class="section-title" id="advantages-title">ПОЧЕМУ ВЫБИРАЮТ <span>НАС</span></h2>
@@ -150,7 +159,6 @@
         </ul>
     </section>
 
-    <!-- Как мы работаем -->
     <section class="workflow" id="workflow" aria-labelledby="workflow-title">
         <h2 class="section-title" id="workflow-title">КАК МЫ РАБОТАЕМ</h2>
         <ol class="workflow__steps">
@@ -162,8 +170,8 @@
         </ol>
 
         <div class="workflow__descriptions">
-            <p>Вы оставляете заявку и рассказываете нам о грузе, маршруте и желаемых сроках доставки.</p>
-            <p>Специалисты оценивают параметры перевозки и подбирают оптимальный маршрут и вид транспорта.</p>
+            <p>Вы оставляете заявку c указанием информации о грузе, маршруте и желаемых сроках доставки.</p>
+            <p>Логисты-менеджеры оценивают параметры перевозки и подбирают оптимальный маршрут и вид транспорта.</p>
             <p>Согласовываем условия, готовим транспорт и документы, после чего запускаем перевозку.</p>
             <p>Контролируем движение груза на всём маршруте и при необходимости оперативно решаем возникающие вопросы.</p>
             <p>Доставляем груз в пункт назначения в соответствии с согласованными условиями.</p>
@@ -229,7 +237,6 @@
     </section>
 </main>
 
-<!-- FOOTER -->
 <footer class="footer" id="contacts">
     <div class="footer__brand">
         <img src="img/Логотип ЛК.jpg" alt="В точку Б">
@@ -267,5 +274,6 @@
         <p> © 2026 в точку б. Все права защищены. <a href="politic-conf.html">Политика конфиденциальности.</a> </p>
     </div>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>
