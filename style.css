@@ -1,31 +1,37 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 
 @font-face {
+    src: url("fonts/gotham_book.otf") format("opentype");
     font-family: "Gotham-Book";
     src: local("Gotham-Book");
 }
 
 @font-face {
+    src: url("fonts/gotham_medium.otf") format("opentype");
     font-family: "Gotham-Medium";
     src: local("Gotham-Medium");
 }
 
 @font-face {
+    src: url("fonts/gotham_bold.otf") format("opentype");
     font-family: "Gotham-Bold";
     src: local("Gotham-Bold");
 }
 
 @font-face {
+    src: url("fonts/AKONY.otf") format("opentype");
     font-family: "AKONY-Bold";
     src: local("AKONY-Bold");
 }
 
 @font-face {
+    src: url("fonts/Gilroy-Regular_0.ttf") format("truetype");
     font-family: "Gilroy-Regular";
     src: local("Gilroy-Regular");
 }
 
 @font-face {
+    src: url("fonts/Gilroy-Medium_0.ttf") format("truetype");
     font-family: "Gilroy-Medium";
     src: local("Gilroy-Medium");
 }
@@ -1439,9 +1445,11 @@ a {
     }
 
     .workflow__steps li:not(:last-child)::after {
-        display: block;
-        margin: 8px 0;
-    }
+    content: "↓";
+    display: block;
+    margin: 10px 0;
+    color: var(--yellow);
+}
 
     .workflow__descriptions {
         grid-template-columns: 1fr;
