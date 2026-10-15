@@ -37,13 +37,16 @@
 </header>
 
 <main>
-    <section class="hero" aria-labelledby="hero-title">
-        <video class="hero__video" autoplay muted loop playsinline>
-            <source src="img/hero.mp4" type="video/mp4">
-        </video>
-        <div class="hero__overlay"></div>
-        <h1 id="hero-title"></h1>
-    </section>
+    
+<section class="hero" aria-labelledby="hero-title">
+    <img src="img/hero.png" class="hero__img" alt="Грузовые автомобили компании «В точку Б» на трассе" fetchpriority="high">
+    <div class="hero__overlay" aria-hidden="true"></div>
+    <div class="hero__content">
+        <h1 id="hero-title"> Логистика,<br> которой можно доверять</h1>
+        <p class="hero__description"> Надёжные грузоперевозки по России и за её пределами. Собственный автопарк и комплексные логистические решения.</p>
+        <a class="hero__button" href="#calculator">Рассчитать перевозку</a>
+    </div>
+</section>
 
    <section class="about" id="about" aria-labelledby="about-title">
     <div class="about__intro">
@@ -51,7 +54,12 @@
             <img src="img/Arrow 1.svg" alt="arrow" class="about__arrow" aria-hidden="true">
             <p><strong>10 лет</strong> <span>в движении</span></p>
         </div>
-        <div class="about__image" aria-hidden="true"></div>
+        <div class="about__image" aria-hidden="true">
+            <img src="img/cars.jpg" alt="cars" class="is-active">
+            <img src="img/box.jpg" alt="box">
+            <img src="img/cars-3.jpg" alt="">
+        </div>
+
     </div>
     <div class="about__content">
         <p>
@@ -171,7 +179,7 @@
 
         <div class="workflow__descriptions">
             <p>Вы оставляете заявку c указанием информации о грузе, маршруте и желаемых сроках доставки.</p>
-            <p>Менеджеры-логисты оценивают параметры перевозки и подбирают оптимальный маршрут и вид транспорта.</p>
+            <p>Логисты-менеджеры оценивают параметры перевозки и подбирают оптимальный маршрут и вид транспорта.</p>
             <p>Согласовываем условия, готовим транспорт и документы, после чего запускаем перевозку.</p>
             <p>Контролируем движение груза на всём маршруте и при необходимости оперативно решаем возникающие вопросы.</p>
             <p>Доставляем груз в пункт назначения в соответствии с согласованными условиями.</p>
@@ -275,5 +283,6 @@
     </div>
 </footer>
 <script src="script.js"></script>
+<script src="gallery.js"></script>
 </body>
 </html>
